@@ -5,6 +5,7 @@ import { useParams } from 'react-router-dom';
 
 import useEnrolled from '../../../../hooks/selectedClasses';
 import CheckoutForm from './CheckoutForm';
+import PageTitle from '../../../../Components/PageTitle/PageTitle';
 
 const stripePromise = loadStripe(import.meta.env.VITE_STRIPE_PUBLISHABLE_KEY);
 function Payment() {
@@ -15,7 +16,7 @@ function Payment() {
 
     return (
         <div>
-           
+           <PageTitle title="Payment" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 Payment
             </h1>
