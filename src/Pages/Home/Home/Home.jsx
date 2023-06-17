@@ -4,6 +4,7 @@ import PopularInstructor from '../PopularInstructor/PopularInstructor';
 import Slider from '../Slider/Slider';
 import HeroPart from '../HeroPart/HeroPart';
 import PageTitle from '../../../Components/PageTitle/PageTitle';
+import About from '../About/About';
 
 function Home() {
     return (
@@ -12,7 +13,8 @@ function Home() {
             <Slider/>
             <PopularClasses />
             <PopularInstructor />
-            <HeroPart/>
+            <HeroPart />
+            <About/>
         </div>
     );
 }

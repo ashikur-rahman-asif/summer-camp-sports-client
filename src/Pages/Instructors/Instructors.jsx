@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Container from "../../Components/Container/Container";
 import PageTitle from "../../Components/PageTitle/PageTitle";
+import Spinner from "../../Components/Spinner/Spinner";
 
 function Instructors() {
   const [instructors, setInstructors] = useState([]);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     axios
       .get("https://12-server-virid.vercel.app/instructors")
@@ -15,7 +17,10 @@ function Instructors() {
       <div>
           <PageTitle title="Instructors" />
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 mt-40 my-10">
+        {loading ? (
+            <Spinner />
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-10 mt-40 my-10">
           {instructors?.map((instructor) => (
             <div
               key={instructor._id}
@@ -34,6 +39,9 @@ function Instructors() {
             </div>
           ))}
         </div>
+          )
+          
+        }
       </Container>
     </div>
   );

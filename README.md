@@ -4,7 +4,7 @@ Welcome to SportsFever Learning Platform. This platform provides a user-friendly
 
 ## Live Demo
 
-Check out the live demo of SportsFever Learning Platform [here](https://www.example.com).
+Check out the live demo of SportsFever Learning Platform [https://ass-12-3d2ab.web.app](https://ass-12-3d2ab.web.app/).
 
 
 ## Features
