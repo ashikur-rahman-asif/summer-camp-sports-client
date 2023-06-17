@@ -2,7 +2,6 @@ import { Elements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
 import useEnrolled from '../../../../hooks/selectedClasses';
 import CheckoutForm from './CheckoutForm';
 import PageTitle from '../../../../Components/PageTitle/PageTitle';
