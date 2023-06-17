@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import useEnrolled from '../../../../hooks/selectedClasses';
 import useAxiosSecure from '../../../../hooks/useAxiosSecure';
+import PageTitle from '../../../../Components/PageTitle/PageTitle';
 
 function EnrollClass() {
     const [enrolledClasses, refetch] = useEnrolled();
@@ -37,7 +38,7 @@ function EnrollClass() {
     };
     return (
         <div>
-            
+            <PageTitle title="Selected Class" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 My Selected Classes
             </h1>
