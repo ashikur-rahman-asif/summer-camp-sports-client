@@ -4,7 +4,7 @@ import Container from "../../../Components/Container/Container";
 function HeroPart() {
   return (
     <Container>
-      <section className="bg-white text-gray-800">
+      <section className="bg-white text-gray-800 mb-8">
         <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col items-center justify-center sm:flex-row sm:justify-between">
             <div className="text-center sm:text-left">
@@ -25,7 +25,7 @@ function HeroPart() {
             <div className="mt-10 sm:mt-0">
               <img
                 className="w-full max-w-md mx-auto sm:max-w-none"
-                src="/summer-camp-image.jpg"
+                src="https://ecusd7.org/glencarbon/wp-content/uploads/sites/10/2022/05/summerSportsCamps-768x377.jpeg"
                 alt="Summer Camp"
               />
             </div>
