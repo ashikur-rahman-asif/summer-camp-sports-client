@@ -2,6 +2,7 @@ import moment from 'moment';
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
 import useAxiosSecure from '../../../../hooks/useAxiosSecure';
+import PageTitle from '../../../../Components/PageTitle/PageTitle';
 
 function EnrolledClass() {
     const [enrolled, setEnrolled] = useState([]);
@@ -15,7 +16,7 @@ function EnrolledClass() {
     console.log(enrolled);
     return (
         <div>
-            
+            <PageTitle title="Enrolled Class" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 My Enrolled Classes
             </h1>
