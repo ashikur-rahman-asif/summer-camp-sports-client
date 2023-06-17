@@ -14,7 +14,7 @@ function PaymentHistory() {
     }, []);
     return (
         <div>
-            
+            <PageTitle title="Payment History" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 My payment History
             </h1>
