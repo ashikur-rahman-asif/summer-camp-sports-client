@@ -29,7 +29,6 @@ function UpdateClass() {
     const seats = form.seats.value;
     const price = form.price.value;
     const details = form.classDetails.value;
-    console.log(name, image, seats, price, details);
     const formData = new FormData();
     formData.append("file", image[0]);
     formData.append("upload_preset", "gyqalhuo");

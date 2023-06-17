@@ -8,7 +8,7 @@ function SocialLogin() {
     const { loginWithGoogle } = useAuth();
     const navigate = useNavigate();
     const location = useLocation();
-    console.log(location);
+
     const from = location.state?.from?.pathname || '/';
     const handleGoogleSignIn = () => {
         loginWithGoogle()

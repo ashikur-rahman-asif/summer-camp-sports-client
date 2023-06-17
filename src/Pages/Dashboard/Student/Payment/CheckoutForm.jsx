@@ -44,7 +44,6 @@ function CheckoutForm({ price, selectedClasses, id }) {
             setError(error.message);
         } else {
             setError('');
-            // console.log(paymentMethod);
         }
         setProcessing(true);
         const { paymentIntent, error: confirmError } = await stripe.confirmCardPayment(
@@ -63,7 +62,7 @@ function CheckoutForm({ price, selectedClasses, id }) {
             console.log(confirmError);
         }
         setProcessing(false);
-        console.log(paymentIntent);
+
         if (paymentIntent.status === 'succeeded') {
             setTransactionId(paymentIntent.id);
 

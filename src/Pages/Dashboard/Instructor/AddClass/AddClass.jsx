@@ -38,7 +38,7 @@ function AddClass() {
           status: "pending",
           feedback: [],
         };
-        console.log(newClass);
+
         axiosSecure.post("/add-class", newClass).then((data) => {
           if (data.data.insertedId) {
             reset();

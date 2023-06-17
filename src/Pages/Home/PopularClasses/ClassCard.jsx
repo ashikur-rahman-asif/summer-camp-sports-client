@@ -34,7 +34,7 @@ function ClassCard({ classes }) {
       };
 
       axiosSecure.post("/select-class", enrollClass).then((data) => {
-        console.log(data.data.message);
+
         if (data.data.message) {
           Swal.fire("Sorry", `${data.data.message}`, "warning");
         }

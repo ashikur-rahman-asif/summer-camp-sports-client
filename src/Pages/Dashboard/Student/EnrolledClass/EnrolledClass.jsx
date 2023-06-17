@@ -13,7 +13,7 @@ function EnrolledClass() {
             setEnrolled(data.data);
         });
     }, [user, axiosSecure]);
-    console.log(enrolled);
+
     return (
         <div>
             <PageTitle title="Enrolled Class" />

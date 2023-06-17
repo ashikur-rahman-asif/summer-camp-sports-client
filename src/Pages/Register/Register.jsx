@@ -57,7 +57,7 @@ function Register() {
             })
               .then((res) => res.json())
               .then((data) => {
-                console.log(data);
+
                 Swal.fire({
                   position: "top-center",
                   icon: "success",
