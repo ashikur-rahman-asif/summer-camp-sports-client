@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
 import useAxiosSecure from '../../../../hooks/useAxiosSecure';
 import MyClassTable from './MyClassTable';
+import PageTitle from '../../../../Components/PageTitle/PageTitle';
 
 function MyClasses() {
     const { user } = useAuth();
@@ -15,6 +16,7 @@ function MyClasses() {
 
     return (
         <div>
+            <PageTitle title="My Class" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 My Classes
             </h1>
