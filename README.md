@@ -1,5 +1,6 @@
 # SportsFever Learning Platform
-![Website Logo](/public/navLogo.png) </br>
+![Website Logo](/public/navLogo.png) 
+
 Welcome to SportsFever Learning Platform. This platform provides a user-friendly environment for online learning. Students can register, instructors can post course classes, and the admin has control over student and instructor management. Additionally, students can purchase courses and make payments using the Stripe payment method.
 
 ## Live Demo
