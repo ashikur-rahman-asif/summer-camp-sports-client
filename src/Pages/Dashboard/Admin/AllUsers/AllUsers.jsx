@@ -4,6 +4,7 @@ import { FaUserCog, FaUserTie } from "react-icons/fa";
 import { LuTrash } from "react-icons/lu";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import PageTitle from "../../../../Components/PageTitle/PageTitle";
 
 function AllUsers() {
   const [axiosSecure] = useAxiosSecure();
@@ -106,7 +107,7 @@ function AllUsers() {
 
   return (
     <div className="max-w-full ">
-    
+    <PageTitle title="All Users" />
       <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
         All Users
       </h1>

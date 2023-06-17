@@ -5,6 +5,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Context/AuthProvider";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 // const img_hosting_token = import.meta.env.VITE_Image_Upload_token;
 
@@ -77,6 +78,8 @@ function Register() {
   };
 
   return (
+    <>
+      <PageTitle title="Register" />
     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
@@ -201,6 +204,7 @@ function Register() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
