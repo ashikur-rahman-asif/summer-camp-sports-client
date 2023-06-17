@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
 import { AuthContext } from "../../Context/AuthProvider";
 import SocialLogin from "../Shared/SocialLogin/SocialLogin";
+import PageTitle from "../../Components/PageTitle/PageTitle";
 
 function Login() {
   const { loginUser } = useContext(AuthContext);
@@ -41,7 +42,10 @@ function Login() {
   };
 
   return (
-    <div className="hero min-h-screen bg-base-200">
+
+    <>
+      <PageTitle title="Login"/>
+     <div className="hero min-h-screen bg-base-200">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Please Login!</h1>
@@ -107,6 +111,7 @@ function Login() {
         </div>
       </div>
     </div>
+    </>
   );
 }
 
