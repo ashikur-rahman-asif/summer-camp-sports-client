@@ -8,13 +8,13 @@ function Slider() {
       <div id="slide1" className="carousel-item relative w-full">
         <img
           src="https://img.freepik.com/free-photo/different-people-participating-cross-country_23-2149157132.jpg?w=1380&t=st=1686607947~exp=1686608547~hmac=e1c82c7f137326af8cd4fd471bf1c33d5f7a04575f1e4b499427839ec325cc13"
-          className="w-full md:h-[90vh]"
+          className="w-full sm:h-[100vh] md:h-[90vh]"
         />
 
         <div className="absolute top-1/3 flex flex-col items-start left-20 w-4/6 md:left-1/4 md:w-1/2 text-white">
           <Fade direction="up" duration={1000} triggerOnce>
             <p className="text-2xl md:text-6xl font-bold">
-              When it comes to summer camp, weird is cool.
+              When it comes to summer camp, weird is cool..
             </p>
 
             <p className="md:text-xl font-bold mt-2">
