@@ -9,7 +9,7 @@ function PopularClasses() {
     const [popularClasses, setPopularClasses] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        fetch('http://localhost:4000/popular-class')
+        fetch('https://12-server-virid.vercel.app/popular-class')
             .then((res) => res.json())
             .then((data) => {
                 setPopularClasses(data);

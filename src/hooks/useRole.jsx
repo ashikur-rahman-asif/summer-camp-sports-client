@@ -9,7 +9,7 @@ const useRole = () => {
         queryKey: ['email', user?.email],
         queryFn: async () => {
             const res = await axiosSecure.get(
-                `http://localhost:4000/user/role/${user?.email}`
+                `https://12-server-virid.vercel.app/user/role/${user?.email}`
             );
 
             return res.data.role;

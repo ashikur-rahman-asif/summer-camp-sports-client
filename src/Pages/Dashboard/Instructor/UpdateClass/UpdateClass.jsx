@@ -15,7 +15,7 @@ function UpdateClass() {
   const { data: singleClass } = useQuery({
     queryKey: ["id", id],
     queryFn: async () => {
-      const res = await axios.get(`http://localhost:4000/class/${id}`);
+      const res = await axios.get(`https://12-server-virid.vercel.app/class/${id}`);
       return res.data;
     },
   });
@@ -52,7 +52,7 @@ function UpdateClass() {
           };
           axiosSecure
             .put(
-              `http://localhost:4000/update-class/${singleClass._id}`,
+              `https://12-server-virid.vercel.app/update-class/${singleClass._id}`,
               updateData
             )
             .then((res) => {
@@ -79,7 +79,7 @@ function UpdateClass() {
       };
       axiosSecure
         .put(
-          `http://localhost:4000/update-class/${singleClass._id}`,
+          `https://12-server-virid.vercel.app/update-class/${singleClass._id}`,
           updateData
         )
         .then((res) => {

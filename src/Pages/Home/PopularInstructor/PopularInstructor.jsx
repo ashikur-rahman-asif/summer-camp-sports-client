@@ -11,7 +11,7 @@ function PopularInstructor() {
     const [popularInstructor, setPopularInstructor] = useState([]);
     const [loading, setLoading] = useState(true);
     useEffect(() => {
-        axios.get('http://localhost:4000/popular-instructor').then((res) => {
+        axios.get('https://12-server-virid.vercel.app/popular-instructor').then((res) => {
             setPopularInstructor(res.data);
             setLoading(false);
         });

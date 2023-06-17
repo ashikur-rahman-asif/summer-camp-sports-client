@@ -85,7 +85,7 @@ function CheckoutForm({ price, selectedClasses, id }) {
                         if (res.data.deletedCount > 0) {
                             axios
                                 .put(
-                                    `http://localhost:4000/booked-seat/${findClass.classId}`
+                                    `https://12-server-virid.vercel.app/booked-seat/${findClass.classId}`
                                 )
                                 .then((res) => {
                                     if (res.data.modifiedCount > 0) {

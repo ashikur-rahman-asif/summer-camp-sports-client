@@ -19,7 +19,7 @@ function SocialLogin() {
                     image: res.user.photoUrl,
                     role: 'student',
                 };
-                fetch('http://localhost:4000/users', {
+                fetch('https://12-server-virid.vercel.app/users', {
                     method: 'POST',
                     headers: {
                         'content-type': 'application/json',

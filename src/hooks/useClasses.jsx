@@ -11,7 +11,7 @@ const useClasses = () => {
     } = useQuery({
         queryKey: ['classes'],
         queryFn: async () => {
-            const response = await axios.get(`http://localhost:4000/classes`);
+            const response = await axios.get(`https://12-server-virid.vercel.app/classes`);
             return response.data;
         },
     });

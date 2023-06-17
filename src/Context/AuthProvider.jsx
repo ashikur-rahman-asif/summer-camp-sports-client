@@ -61,7 +61,7 @@ function AuthProvider({ children }) {
 
             if (loggedUser) {
                 axios
-                    .post('http://localhost:4000/jwt', {
+                    .post('https://12-server-virid.vercel.app/jwt', {
                         email: loggedUser.email,
                     })
                     .then((data) => localStorage.setItem('access-token', data.data.token));

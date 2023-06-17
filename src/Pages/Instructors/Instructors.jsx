@@ -7,7 +7,7 @@ function Instructors() {
   const [instructors, setInstructors] = useState([]);
   useEffect(() => {
     axios
-      .get("http://localhost:4000/instructors")
+      .get("https://12-server-virid.vercel.app/instructors")
       .then((res) => setInstructors(res.data));
   }, []);
 
