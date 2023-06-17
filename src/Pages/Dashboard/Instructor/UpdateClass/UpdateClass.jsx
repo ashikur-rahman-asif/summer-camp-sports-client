@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import PageTitle from "../../../../Components/PageTitle/PageTitle";
 
 function UpdateClass() {
   const [axiosSecure] = useAxiosSecure();
@@ -97,6 +98,7 @@ function UpdateClass() {
 
   return (
     <div className="">
+      <PageTitle title="Update Class" />
       <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
         Update Class
       </h1>

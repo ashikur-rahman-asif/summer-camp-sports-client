@@ -1,15 +1,15 @@
-/* eslint-disable no-underscore-dangle */
 import React from 'react';
 import Spinner from '../../../../Components/Spinner/Spinner';
 import useClasses from '../../../../hooks/useClasses';
 import ManageClassesTable from './ManageClassesTable';
+import PageTitle from '../../../../Components/PageTitle/PageTitle';
 
 function ManageClasses() {
     const [classes, refetch, isLoading] = useClasses();
 
     return (
         <div>
-            
+            <PageTitle title="Manage Class" />
             <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
                 Manage Classes
             </h1>

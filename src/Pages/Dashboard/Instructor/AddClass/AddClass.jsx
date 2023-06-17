@@ -1,10 +1,10 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
 import axios from "axios";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import Swal from "sweetalert2";
 import useAuth from "../../../../hooks/useAuth";
 import useAxiosSecure from "../../../../hooks/useAxiosSecure";
+import PageTitle from "../../../../Components/PageTitle/PageTitle";
 
 function AddClass() {
   const { user } = useAuth();
@@ -56,7 +56,7 @@ function AddClass() {
   };
   return (
     <div className="">
-   
+   <PageTitle title="Add Class" />
       <h1 className="text-center text-3xl font-bold dark:text-white text-dark-grey mb-5 ">
         Add Class
       </h1>
