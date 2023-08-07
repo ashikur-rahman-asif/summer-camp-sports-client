@@ -5,6 +5,7 @@ import Slider from '../Slider/Slider';
 import HeroPart from '../HeroPart/HeroPart';
 import PageTitle from '../../../Components/PageTitle/PageTitle';
 import About from '../About/About';
+import Contact from '../Contact/Contact';
 
 function Home() {
     return (
@@ -14,7 +15,8 @@ function Home() {
             <PopularClasses />
             <PopularInstructor />
             <HeroPart />
-            <About/>
+            <About />
+            <Contact/>
         </div>
     );
 }
